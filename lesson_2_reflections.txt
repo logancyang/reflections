@@ -1,4 +1,12 @@
 What happens when you initialize a repository? Why do you need to do it?
 	
-	It creates a .git directory. It becomes a git repository that can track version history.
+	It creates a .git directory. It becomes a git repository that can 
+	track version history.
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+
+	It's a buffer zone between the working directory and the repository. You can 
+	add some, not all the changed files to the staging area and commit to the repo
+	so that other files in the repo are not affected.
 
