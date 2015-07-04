@@ -10,3 +10,41 @@ What value do you think it offers?
 	add some, not all the changed files to the staging area and commit to the repo
 	so that other files in the repo are not affected.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Only add one logical change to the staging area each time, and commit.
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+
+	When we want to try out different experiments, new unique features and do not want
+	to affect the master branch, make new branches. Master branch must be production
+	quality, must be working well.
+
+How do the diagrams help you visualize the branch structure?
+
+	See the single linked list structure, which commits are reachable from which branch.
+
+What is the result of merging two branches together? Why do we represent it in the 
+diagram the way we do?
+
+	The result is we have a new commit composed of the newest commits of both branches
+	with a recursive rule.
+	(question here: 
+		Original: A, B, D
+		Rachel: A, B, C, D
+		Jake: B, D, E
+		Merged: B, C, D, E
+		Reason: Jake removed A, A should not be added. B and D are intersection of both, 
+		C and E are introduced, so they all should be in the merged result.
+		Question: What if in Rachel's file, the part she introduced, C, depends on A?
+		          C won't work in the merged file.
+		Answer: ? asked in the discussion forum.
+	)
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Pros: convenient.
+	Cons: Can't resolve conflicts.
+
+
