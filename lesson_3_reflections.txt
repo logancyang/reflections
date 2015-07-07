@@ -1,1 +1,42 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+	Remote repository stores everything online so that we can access them from different
+	devices without losing them.
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+
+	For example, if other people updated the remote repo and there's some changes you do
+	not want, you prefer manually pulling in this case.
+
+Describe the differences between forks, clones, and branches. When would you use one 
+instead of another?
+
+	Branches: you want to try some experiments on new branches while keeping the good 
+			  working version as the master branch. You can merge the new branch into
+			  master later if you want.
+	Clones: clone the repository from Github remote to local. It's just a copy, with all
+			the commit history. You can make changes locally, git add, git commit, git pull,
+			git push to modify the remote.
+	Forks: if you want your own version of other people's project, fork it to your Github
+		   account. You can clone your forked version to local, modify local and remote, 
+		   without modifying the original version created by the original author.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	The benefit is to let git know the latest commit stored and the new commit can be 
+	fast-forward merged or not. Fast-forward merge is just having the newest commit as HEAD.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what 
+would be harder?
+
+	Without Git or Github, I would manually maintain versions and compare with my collaborator's.
+	That is much harder than Git and Github.
+
+When would you want to make changes in a separate branch rather than directly in master? What 
+benefits does each approach have?
+
+	When collaborate with others, everyone works on their own branch and gives a pull request 
+	when they want to update the remote master, so each can review the changes before making the
+	change, to make sure the remote master is okay with everybody.
+
